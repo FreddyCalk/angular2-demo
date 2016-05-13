@@ -1,0 +1,42 @@
+#page-wrapper{
+	margin:auto;
+	padding:50px 0;
+	border-radius: 10px;
+}
+#page-wrapper #login-logo-wrapper img{
+	width:100%;
+}
+#page-wrapper .login-input{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding:5px;
+	font-size:18px;
+	border-radius: 5px;
+	border:1px solid #cacaca;
+}
+#page-wrapper .select-box{
+	height:33px;
+}
+#page-wrapper button.login-input{
+	text-transform: uppercase;
+	background-color: #22dada;
+	cursor: pointer;
+}
+#login-pipe{
+	font-size:20px;
+	vertical-align: middle;
+}
+.login-nav-link{
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 5px;
+}
+#login-nav-link-wrapper{
+	text-align:center;
+	margin-top:5px;
+}
+@media only screen and (max-width: 400px){
+	.login-nav-link{
+		font-size:10px;
+	}
+}

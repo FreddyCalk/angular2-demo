@@ -1,0 +1,28 @@
+<div id="page-wrapper" class="container">
+	<div id="login-logo-wrapper" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+		<img src="/assets/testLogo.gif">
+	</div>
+	<form>
+		<div class="row col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+			<input class="col-xs-12 login-input" type="text" placeholder="EMAIL" [(ngModel)]='user.Email'>
+		</div>
+		<div class="row col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+			<input class="col-xs-12 login-input" type="password" placeholder="PASSWORD" [(ngModel)]='user.Password' (change)="logChange($event)">
+		</div>
+		<div class="row col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+			<button class="col-xs-12 login-input" type="submit">login</button>
+			<span>{{user.Email}}</span>
+			<span>{{user.Password}}</span>
+		</div>
+	</form>
+	<div id="login-nav-link-wrapper" class="row col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+		<div class="col-xs-5">
+			<a class="login-nav-link" href="">Password</a>
+		</div>
+		<span class="col-xs-2" id="login-pipe">|</span>
+		<div class="col-xs-5">
+			<a class="login-nav-link" (click)="goToRegister()">Register</a>
+		</div>
+	</div>
+</div>
+ 

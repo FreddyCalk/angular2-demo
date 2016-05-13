@@ -1,0 +1,7 @@
+<div id="page-wrapper" class="container">
+	<ul>
+		<li *ngFor="let user of users" (click)="onSelect(user)">{{user.FirstName}} {{user.LastName}}</li>
+	</ul>
+	<user-detail [user]="selectedUser"></user-detail>
+</div>
+ 
